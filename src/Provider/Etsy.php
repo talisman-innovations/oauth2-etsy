@@ -76,7 +76,7 @@ class Etsy extends AbstractProvider
     public function getDefaultHeaders() : array
     {
         return [
-            'x-api-key' => $this->clientId
+            'x-api-key' => $this->clientId . ':'. $this->clientSecret
         ];
     }
 
